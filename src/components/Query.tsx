@@ -4,34 +4,32 @@
 // import { settings } from "../settings";
 // import Box from "@mui/material/Box";
 // import CircularProgress from "@mui/material/CircularProgress";
- 
 
 // const getClient = async () => {
 //   const cosmWasmClient = await SigningCosmWasmClient.connect(settings.url);
- 
+
 //   const client = new contracts.Mixnet.MixnetQueryClient(
 //     cosmWasmClient,
 //     settings.mixnetContractAddress
 //   );
 //   return client;
 // };
-
 export const Mixnodes = () => {
-  return (<p>hello</p>)
-}
+  return <div>hello</div>;
+};
 // export const Mixnodes = () => {
 //   const [mixnodes, setMixnodes] = useState<any>();
- 
+
 //   const getMixnodes = async () => {
 //     const client = await getClient();
 //     const { nodes } = await client.getMixNodesDetailed({});
 //     setMixnodes(nodes);
 //   };
- 
+
 //   useEffect(() => {
 //     getMixnodes();
 //   }, []);
- 
+
 //   if (!mixnodes) {
 //     return (
 //       <Box sx={{ display: "flex" }}>
@@ -39,7 +37,7 @@ export const Mixnodes = () => {
 //       </Box>
 //     );
 //   }
- 
+
 //   return (
 //     <div style={{ marginTop: "1rem" }}>
 //       {mixnodes?.length &&
